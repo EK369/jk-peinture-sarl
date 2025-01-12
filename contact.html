@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+  <!-- =====  BASIC PAGE NEEDS  ===== -->
+  <meta charset="utf-8">
+  <title>JK PEINTURE SÀRL</title>
+  <!-- =====  SEO MATE  ===== -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="distribution" content="global">
+  <meta name="revisit-after" content="2 Days">
+  <meta name="robots" content="ALL">
+  <meta name="rating" content="8 YEARS">
+  <meta name="Language" content="en-us">
+  <meta name="GOOGLEBOT" content="NOARCHIVE">
+  <!-- =====  MOBILE SPECIFICATION  ===== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <!-- =====  CSS  ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+  <!-- =====  CSS  ===== -->
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/menu.css">
+  <link rel="stylesheet" type="text/css" href="css/bootsnav.css" />
+  <link rel="stylesheet" type="text/css" href="css/heroslider.css" />
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="css/animation.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="shortcut icon" href="image/logoJK-removebg-preview.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <style>
+      #map {
+          width: 100%;
+          height: 50vh; /* Full height of the viewport */
+          display: block;
+      }
+
+      ::-webkit-scrollbar {
+        display: none;  /* For Chrome, Safari, and Opera */
+      } 
+  </style>
+
+
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+  <link rel="shortcut icon" href="image/logoJK-removebg-preview.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
+</head>
+
+<body style="
+     background: url('image/logoJK-noColor.svg'); 
+    /* background-size: cover; */
+    background-size: 150px 150px;
+    background-repeat: repeat; 
+    /* width: 100%;  */
+    overflow: scroll;
+    scrollbar-width: none;
+    transition: background-position 10s ease-in-out;
+
+    background-color: #1a1a1a; /* Dark background for contrast */
+">
+
+<script>
+  function randomMovement() {
+      // Get the current body background position
+      let x = Math.floor(Math.random() * window.innerWidth); // Random horizontal position
+      let y = Math.floor(Math.random() * window.innerHeight); // Random vertical position
+      
+      // Update the background position with random values
+      document.body.style.backgroundPosition = `${x}px ${y}px`;
+  }
+
+  // Call the random movement function every 2 seconds
+  setInterval(randomMovement, 4000);
+</script>
+
+
+  <!-- =====  LODER  ===== -->
+  <div id="gif-loder" class="loder"></div>
+  <div style="overflow: hidden;" class="wrapper">
+    <!-- =====  HEADER START  ===== -->
+    <header id="header">
+      <!-- Start Navigation -->
+      <nav class="navbar navbar-default navbar-fixed white no-background bootsnav">
+        <!-- Start Top Search -->
+        <div class="top-search">
+          <div class="container">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Top Search -->
+        <div class="container">
+ 
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <div class="navbar-brand-name">
+              <div class="navbar-brand-name-logo">
+                <a class="navbar-brand" href="index.html">
+                  <img src="image/logoJK-removebg-preview.png" class="logo logo-display" alt="JK PAINTURE SAINT">
+                  
+                  <img src="image/logoJK-removebg-preview.png" class="logo logo-scrolled" alt="">
+                </a>
+
+              </div>
+              
+              <div class="navbar-brand-name-page">
+                <a style="color: #FFE200" href="index.html">PEINTURE SÀRL</a>
+              </div>
+            </div>
+          </div>
+          <!-- End Header Navigation -->
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+              <li class="active"><a href="index.html">ACCUEIL</a></li>
+              <li class="active"><a href="about.html">PROPS DE NOUS</a></li>
+              <li class="active">
+                <a href="./services.html">SERVICES</a>
+              </li>
+              
+              <li class="dropdown">
+                <!-- <a href="blog_2col_grid.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a> -->
+                <a href="blog_2col_grid.html">PROJETS</a>
+              </li>
+              
+              <li class="dropdown">
+                <a href="contact.html">CONTACTEZ-NOUS</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- Start Side Menu -->
+        <div class="side">
+          <a href="#" class="close-side"><i class="fa fa-times"></i></a>
+          <div class="widget">
+            <h6 class="title">English Language</h6>
+            <ul class="link">
+              <li><a href="#">FRENCH</a></li>
+              <li><a href="#">ENGLISH</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- End Side Menu -->
+      </nav>
+      <!-- End Navigation -->
+      <div class="clearfix"></div>
+    </header>
+    <!-- =====  HEADER END  ===== -->
+    <!-- =====  BREADCRUMB STRAT  ===== -->
+    <div class="breadcrumb pt_80 pb_50">
+      <div class="container">
+        <div style="display: flex; align-items: end;">
+          <div style="width: 99.5%; height: 70px; "></div>
+          <div class="tree-branch"></div>
+        </div>
+        <h1 style="color: #FFE200;" class="mb_20">CONTACTEZ-NOUS</h1>
+        <ul class="right">
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li class="active">CONTACTEZ-NOUS</li>
+        </ul>
+      </div>
+    </div>
+    <!-- =====  BREADCRUMB END===== -->
+    <!-- =====  CONTAINER START  ===== -->
+    <!--Get In Touch  -->
+    <section class="pt_80">
+      <div class="container">
+        <div class="row">
+          <div style="width: auto;" class="col-md-6 mb_50 col-md-offset-3 text-center">
+            <div class="heading-part ">
+              <h2 style="color: white; font-weight: bold; font-size: 5rem;" class="main_title mb_30">ENTRONS EN CONTACT</h2>
+              <p
+              style="color: white; font-weight: bold; font-size: 1.6rem;"
+              >Contactez-nous par téléphone, par e-mail ou visitez notre bureau. Nous sommes impatients de discuter de la manière dont nous pouvons contribuer à votre prochain projet. Nos experts sont prêts à vous fournir une assistance personnalisée et à répondre à toutes vos questions.</p>
+            </div>
+          </div>
+        </div>
+        <!-- contact  -->
+        <div
+        style="         
+                /* border: 1px solid black; */
+                padding: 25px;
+                border-radius: 25px;
+                margin-bottom: 25px;
+                background-color: #252628;
+              "
+        class="row">
+          <div style="
+             padding: 0px;
+             margin-right: 25px;
+          " class="col-md-4 col-xs-12 contact">
+            <div 
+              style="         
+                padding: 25px;
+                border-radius: 25px;
+                color: white;
+                z-index: 3;
+                background: linear-gradient(140deg, rgba(37, 38, 40, 0.8), rgba(37, 38, 40, 0.5));
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+
+                margin-bottom: 25px !important;
+              "
+            class="location mb_50">
+              <h5 style="color: #FFE200; line-height: 30px; font-weight: bold; font-size: 3rem;" class="capitalize text-bold mb_30">NOTRE EMPLACEMENT</h5>
+              <div class="address"><span style="font-weight: bold;">Adresse du Bureau</span>
+                <br> Grand-Rue 45, 
+                <br> Vaulruz
+                Switzerland 1627</div>
+              <div class="call mt_20"><i style="color: #FFE200;" class="fa fa-phone" aria-hidden="true"></i>+41 079 290 81 12</div>
+            </div>
+            <div
+            style="         
+                padding: 25px;
+                border-radius: 25px;
+                color: white;
+                z-index: 3;
+                background: linear-gradient(140deg, rgba(37, 38, 40, 0.8), rgba(37, 38, 40, 0.5));
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+                margin-bottom: 25px !important;
+              "
+            class="Career mb_50">
+              <h5 style="color: #FFE200; font-weight: bold; font-size: 3rem;" class="capitalize text-bold mb_30">PROFESSIONNALISME</h5>
+              <div class="address">Nous croyons que notre succès repose sur le travail acharné, la créativité et le dévouement de notre équipe</div>
+              <div class="email mt_20"><i style="color: #FFE200;" class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:careers@yourdomain.com" target="_top">careers@yourdomain.com</a></div>
+            </div>
+            <div
+            style="         
+                padding: 25px;
+                border-radius: 25px;
+                color: white;
+                z-index: 3;
+                background: linear-gradient(140deg, rgba(37, 38, 40, 0.8), rgba(37, 38, 40, 0.5));
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+                margin-bottom: 0px;
+              "
+            class="Hello mb_50">
+              <h5 style="color: #FFE200; font-weight: bold; line-height: 30px; font-size: 3rem;" class="capitalize text-bold mb_30">RESTONS EN CONTACT</h5>
+              <div class="address">Nous serions ravis d'avoir de vos nouvelles ! Que vous souhaitiez discuter d'un projet, poser des questions ou simplement en savoir plus sur nos services</div>
+              <div class="email mt_20"><i style="color: #FFE200;" class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@yourdomailname.com" target="_top">info@yourdomailname.com</a></div>
+            </div>
+          </div>
+          <div
+          style="
+                  /* Maintain existing styles for content positioning */
+                  padding: 25px;
+                border-radius: 25px;
+                color: white;
+                z-index: 3;
+                width: 64% !important;
+                background: linear-gradient(140deg, rgba(37, 38, 40, 0.8), rgba(37, 38, 40, 0.5));
+                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+            "
+          class="col-md-8 col-xs-12 contact-form mb_50">
+          <h1 style="
+               color: #FFE200;
+               font-weight: bold;
+               font-size: 3rem;
+               margin-bottom: 20px;
+          ">TRAVAILLONS ENSEMBLE!</h1>
+            <!-- Contact FORM -->
+            <div id="contact_form">
+              <!-- <form id="contact_body" method="post" action="http://localhost:3000/contacts"> -->
+              <form id="contact_body" action="#">
+
+                <!--                                <label class="full-with-form" ><span>Name</span></label>
+-->
+                <input style="color: white !important;" class="full-with-form " type="text" id="name" name="name" placeholder="Nom Complet" data-required="true" />
+                <!--                <label class="full-with-form" ><span>Email Address</span></label>
+-->
+                <input style="color: white !important;" class="full-with-form  mt_30" type="email" id="email" name="email" placeholder="Adresse E-mail" data-required="true" />
+                <!--                <label class="full-with-form" ><span>Phone Number</span></label>
+-->
+                <!-- <input class="full-with-form  mt_30" type="text" id="phone" name="phone" placeholder="Phone Number" maxlength="15" data-required="false" /> -->
+                <div style="display: flex; align-items: center;">
+                  <p class="mt_30" style="color: var(--mate-color); padding: 10px 5px 10px 0px; border-bottom: 1px solid var(--green-color); font-size: 13px;">+41</p>
+                  <input style="color: white !important;" class="full-with-form  mt_30" type="tel" id="phone" name="phone" placeholder="Téléphone" maxlength="20" data-required="false" />
+                </div>
+                <!--                <label class="full-with-form" ><span>Subject</span></label>
+-->
+                <!-- <input class="full-with-form  mt_30" type="text" id="subject" name="subject" placeholder="Subject" data-required="true"> -->
+                <div style="display: flex; align-items: end;">
+                  <input style="color: white !important;" class="full-with-form  mt_30" type="text" id="subject" name="subject" placeholder="Sujet" data-required="true"
+                    onkeyup="countChars('subject','charCountInput', 'inputLength');" onkeydown="countChars('subject','charCountInput', 'inputLength');" onmouseout="countChars('subject','charCountInput', 'inputLength');">
+                  <span id="charCountInput" style="border-bottom: 1px solid var(--red-color); width: 70px; text-align: end;"></span>
+                </div>
+
+                <!--<label class="full-with-form" ><span>Message</span></label>
+-->
+                <!-- <textarea class="full-with-form  mt_30" id="message" name="message" placeholder="Message" data-required="true"></textarea> -->
+                <div style="display: flex; align-items: end;">
+                  <textarea style="color: white !important;" class="full-with-form  mt_30" id="message" name="message" placeholder="Message" data-required="true" style="resize: vertical !important;"
+                    onkeyup="countChars('message','charCountTextarea', 'textareaLength');" onkeydown="countChars('message','charCountTextarea', 'textareaLength');" onmouseout="countChars('message','charCountTextarea', 'textareaLength');"></textarea>
+                  <span id="charCountTextarea" style="border-bottom: 1px solid var(--red-color); width: 70px; text-align: end;"></span>
+                </div>
+                <!-- <button type="submit" class="custom-btn btn-12 mt_30 wow fadeInUp" data-wow-delay=".4s">Send Message</button> -->
+                <div class="contact-button" style="display: flex; align-items: center;">
+                  <button type="submit" class="custom-btn btn-1 mt_30 wow fadeInUp" data-wow-delay=".4s">ENVOYER UN MESSAGE</button>
+                  <p id="submitButton-p" class="mt_30 wow fadeInUp" style="margin-left: 30px; color: var(--red-color);" data-wow-delay=".4s"></p>
+                </div>
+              </form>
+              <div id="contact_results"></div>
+            </div>
+            <!-- END Contact FORM -->
+          </div>
+        </div>
+        <!-- map  -->
+        <div class="row">
+          <div class="col-xs-12 map mb_80">
+            <div style="border-radius: 25px; border: none;" id="map"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End contact - -->
+    <!-- =====  CONTAINER END  ===== -->
+    <!-- =====  FOOTER START  ===== -->
+    <div id="contact" class="footer ptb_100">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 mtb_40 text-left wow fadeInUp" data-wow-delay=".2s">
+            <h4 style="color: #FFE200; font-weight: bold;" class="footer-title ptb_20 light uppr ">CONTACTEZ-NOUS</h4>
+            <ul style="color: #FFE200;">
+              <li><i class="fa fa-map-marker-alt"></i> Grand-Rue 45, Vaulruz<br> Switzerland 1627</li>
+              <li><i class="fa fa-phone"></i> 079/290 81 12</li>
+              <li><i class="fa fa-envelope"></i> info@jkpeinture.ch</li>
+            </ul>
+          </div>
+          <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
+            <div class="footer-logo mt_20 mb_20"> <a href="index.html"> <img src="image/logoJK-removebg-preview.png" alt="JK PEINTURE SAINT"> </a> </div>
+            <div class="footer-link">
+              <ul>
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="about.html">PROPS DE NOUS</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="blog_2col_grid.html">PROJETS</a></li>
+                <li><a href="contact.html">CONTACTEZ-NOUS</a></li>
+              </ul>
+            </div>
+            <div style="margin-top: 30px;" class="copyright-part mtb_10">@ 2025 All Rights Reserved JK PEINTURE SAINT</div>
+            <div class="social_icon">
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-3 mtb_40 text-right wow fadeInUp" data-wow-delay=".6s">
+            <h4 style="color: #FFE200; font-weight: bold;" class="footer-title ptb_20 light uppr">TRAVAILLONS ENSEMBLE</h4>
+            <p style="color: #FFE200;">Contactez-nous par e-mail
+              ou par téléphone</p>
+            <div class="form-group light">
+              <!-- <input placeholder="Enter Your Email Address" type="text"> -->
+              <br>
+              <button class="custom-btn btn-12 light mt_10">CONTACTEZ-NOUS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- =====  FOOTER END  ===== -->
+  </div>
+  <script src="js/jQuery_v3.1.1.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootsnav.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
+  
+  <script src="js/constants.js"></script>
+  <script src="js/menu.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAT3mI0RI16q19Oxv93gSxN0cF0wfxWN6w">
+  </script> -->
+  <!-- <script src="js/map.js"></script>
+   
+  
+  
+  -->
+
+
+
+
+
+  <!-- <div id="map"></div> -->
+
+    <!-- Include Leaflet.js and jQuery -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+
+    <script>
+        $(document).ready(function() {
+            // Define the location for Vaulruz, Switzerland (latitude, longitude)
+            var cur_location = [46.619, 7.026];
+
+            // Initialize the Leaflet map and set its view to the specified location and zoom level
+            var map = L.map('map').setView(cur_location, 16);
+
+            // Set up the tile layer using OpenStreetMap tiles (with styling)
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Adding marker with popup text (like in Google Maps)
+            var marker = L.marker(cur_location).addTo(map)
+                .bindPopup('<b>Grand-Rue 45, Vaulruz, Switzerland 1627</b>')
+                .openPopup();
+
+            // Apply custom styling similar to Google Maps
+            var mapStyles = [
+                {
+                    "elementType": "geometry",
+                    "stylers": [
+                        { "color": "#f5f5f5" }
+                    ]
+                },
+                {
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        { "visibility": "off" }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.fill",
+                    "stylers": [
+                        { "color": "#616161" }
+                    ]
+                },
+                {
+                    "elementType": "labels.text.stroke",
+                    "stylers": [
+                        { "color": "#f5f5f5" }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "geometry",
+                    "stylers": [
+                        { "color": "#ffffff" }
+                    ]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "geometry",
+                    "stylers": [
+                        { "color": "#dadada" }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [
+                        { "color": "#c9c9c9" }
+                    ]
+                }
+            ];
+
+            // Use a custom tile layer with styles
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            // Ensure the map resizes correctly when the window size changes
+            $(window).on('resize', function() {
+                map.invalidateSize(); // Recalculate the map size when the window is resized
+            });
+            document.getElementById('gif-loder').remove()
+            document.querySelectorAll(".leaflet-top.leaflet-left")[0].style.zIndex = "400";
+        });
+        
+    </script>
+
+  <script src="js/mail.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- <script>
+    document.getElementById('gif-loder').remove()
+    document.querySelectorAll(".leaflet-top.leaflet-left")[0].style.zIndex = "400";
+  </script> -->
+</body>
+
+</html>

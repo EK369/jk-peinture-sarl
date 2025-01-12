@@ -1,0 +1,25 @@
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	background-position: center center;
+}
+
+.large-header {
+	background-image: url('../images/banner2.jpg');
+}
+
+.demo-2 .large-header {
+	background-image: url('../images/banner2.jpg');
+	background-position: center bottom;
+}
+
+.demo-3 .large-header {
+	background: #7f8c8d;
+}
+
+.demo-4 .large-header {
+	background: #f9f1e9;
+}
+
