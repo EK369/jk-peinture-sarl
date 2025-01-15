@@ -1,0 +1,533 @@
+@media (max-width: 600px) {
+    .navbar-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: auto;
+    }
+  
+    .navbar-toggle {
+      height: 100%;
+      /* top:  !important; */
+      margin-top: 4.5% !important;
+    }
+  
+    .navbar-brand {
+      padding: 0 !important;
+    }
+  
+    .navbar-brand-name {
+      order: 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 !important;
+      width: auto;
+    }
+  
+    .navbar-brand-name-logo {
+      display: flex;
+      padding: 0 !important;
+      align-items: center;
+    }
+  
+    .navbar-brand-name-page {
+      display: block;
+      font-size: 1.8rem;
+      margin-left: 0;
+    }
+  
+    .logo {
+      display: block;
+      width: 10px !important; /* Adjust the width to make the logo smaller */
+    }
+
+
+
+
+    .navbar-collapse {
+        display: block !important; /* Ensure the navbar is fully expanded */
+        height: 100% !important;
+        overflow: visible !important; /* Ensure all items are visible */
+      }
+
+      ul {
+        height: auto !important;
+        color: black;
+      }
+
+      .nav.navbar-nav {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+    
+      .nav > li {
+        display: block; /* Ensure all list items are displayed as block elements */
+      }
+
+      li.active a {
+        color: #FFE200 !important;
+      }
+    
+      ul a {
+        color: rgb(175, 175, 175) !important;
+        border: none !important;
+      }
+      .nav > li > a {
+        display: block;
+        padding: 10px 15px; /* Adjust padding as needed */
+        text-align: center; /* Align text to the left */
+      }
+
+      .active {
+        font-weight: bold; /* Bold text */
+      }
+  }
+  
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+    /* Center the container and add some padding */
+
+
+    /* Adjust column styles */
+    .col-md-8,
+    .col-md-4 {
+        width: 100%; /* Make each column take full width */
+        text-align: center; /* Center the text */
+        margin-bottom: 20px; /* Add margin between the columns */
+    }
+
+    /* Adjust the title */
+    .main_title {
+        font-size: 3rem; /* Reduce font size on mobile */
+        line-height: 1.3;
+        text-align: center; /* Center the text */
+        padding-bottom: 10px; /* Add space below the title */
+    }
+
+    .story_detail {
+        margin: 0 !important;
+    }
+
+    /* Adjust paragraph text */
+    .story_detail p {
+        font-size: 1.3rem; /* Adjust font size */
+        line-height: 1.5;
+        text-align: center; /* Center the text */
+        padding: 0 15px; /* Add padding to the sides for better readability */
+    }
+
+    /* Adjust the button */
+    .custom-btn {
+        font-size: 1.5rem; /* Increase font size slightly */
+        padding: 12px 20px; /* Adjust button padding */
+        margin-top: 15px; /* Add space above the button */
+        width: 80%; /* Make the button width 80% of the container */
+    }
+
+    /* Adjust the header text */
+    .header1-text {
+        font-size: 2rem; /* Reduce font size for better fit */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Add space below the text */
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Make the container block stack vertically */
+    .responsive-container-block {
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 0 !important; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-blk .cardHeading {
+        font-size: 3rem !important;
+    }
+
+    /* Ensure the text block takes full width and aligns text in the center */
+    .textSide {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px; /* Space between text and buttons */
+    }
+
+    /* Adjust cardText block */
+    .cardText {
+        padding: 10px;
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    /* Adjust heading size and line height for smaller screens */
+    .cardHeading {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    /* Adjust subheading size for better readability */
+    .cardSubHeading {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .responsive-cell-block a {
+        display: inline-block !important;
+        margin: 10px 10px !important;  /* Space between the buttons */
+    }
+
+
+
+
+    .row {
+        padding-top: auto !important;
+        padding-bottom: auto !important;
+    }
+
+
+    /* Make buttons responsive */
+    .custom-btn {
+        font-size: 1.2rem;
+        padding: 12px 20px !important;
+        width: auto; /* Buttons will adjust to content */
+    }
+
+    /* Adjust the image container to make the image fit better */
+    .imgContainer {
+        order: 1;
+        width: 100%;
+        margin-top: 20px; /* Add space between text and image */
+        text-align: center;
+    }
+
+
+    .responsive-cell-block.wk-desk-6.wk-ipadp-6.wk-tab-12.wk-mobile-12 {
+        display: block !important;
+    }
+
+    .btn-con {
+            order: 2; /* Ensure buttons appear below text */
+            /* display: flex; */
+            justify-content: center;
+            margin-top: 20px;
+
+    }
+
+    .button-container a {
+        margin: 0 10px;
+    }
+
+
+    .mainImg {
+        width: 90%; /* Make the image width smaller on mobile */
+        max-width: 100%; /* Ensure image doesn't overflow */
+        border-radius: 15px;
+    }
+
+    .blueDots {
+        display: none; /* Hide the blue dots image on smaller screens */
+    }
+
+
+    .wrapper {
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    /* Center the portfolio filter items */
+    .portfolio-filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+    
+
+    .portfolio-filter li {
+      margin: 0 10px;
+    }
+  
+    .portfolio-filter li a {
+      background: #1a1a1a !important; /* Remove white background */
+      color: #000; /* Set the text color */
+      border: none;
+      padding: 10px 15px;
+      font-size: 1.5rem;
+    }
+  
+    /* Make grid container and grid items responsive */
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+
+
+    .ptb_80 {
+      padding-top: 30px !important;
+      padding-bottom: 30px !important;
+    }
+
+    .plr-15 {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+
+    .grid-item .work-detail {
+        position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: -40px;
+    opacity: 0;
+    transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    }
+  
+    .grid-item {
+      width: 100%; /* Take full width on mobile */
+      max-width: -webkit-fill-available; /* Limit width for larger images */
+    }
+
+    .three-col-work {
+      padding-left: 0 !important;
+    }
+
+    .grid-item a {
+        background-color: transparent !important;
+    }
+
+
+    .grid-item img {
+        border-radius: 15px;
+    }
+
+
+    .mb_30 {
+        margin-top: 40px !important;
+        margin-bottom: 0 !important;
+    }
+
+    .mb_100 {
+        margin-bottom: 50px;
+    }
+  
+    /* Style for the "Montrer Plus de Travaux Termines" button */
+    #creative-image-btn {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+    }
+  }
+  
+
+
+
+
+/* Media query for screens up to 1024px (tablets) */
+@media screen and (max-width: 1024px) {
+    .item {
+      width: 45%; /* 2 items per row */
+    }
+
+
+  }
+  
+  /* Media query for screens up to 768px (small tablets and mobile devices) */
+  @media screen and (max-width: 768px) {
+    .projectFactsWrap {
+      justify-content: center; /* Center items */
+      margin-bottom: 20px !important;
+    }
+
+
+
+    .p-style {
+        font-size: 1.5rem !important;
+    }
+  
+    .item {
+      width: 80%; /* 1 item per row */
+    }
+    .projectFactsWrap .item {
+        width: 25%;
+        height: auto;
+        padding: 60px 0px !important;
+        text-align: center;
+    }
+  }
+  
+  /* Media query for very small screens (extra small devices) */
+  @media screen and (max-width: 480px) {
+    .item {
+      width: 100%; /* Full width for each item */
+    }
+
+  
+    .number {
+      font-size: 20px; /* Smaller number font size */
+    }
+  
+    .item p {
+      font-size: 14px; /* Smaller text for better readability */
+    }
+  }
+
+
+
+
+
+  /* Media query for screens up to 768px (for phones and small devices) */
+@media screen and (max-width: 768px) {
+
+    /* Center the team grid */
+    .team_grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Adjust each team item */
+    .item.team-detail {
+      width: 90%; /* Make the items take full width on small screens */
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 20px; /* Space between items */
+      text-align: center;
+    }
+  
+    /* Adjust the images inside team items */
+    .team-item-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+  
+    /* Adjust titles and details */
+    .team-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust social media icons */
+    .social li a {
+      font-size: 24px; /* Smaller icons */
+    }
+  
+    /* Adjust spacing and make buttons fit well */
+    .more a {
+      font-size: 1rem;
+      margin-right: 0;
+      padding: 8px 15px;
+    }
+  
+    /* Adjust spacing and font size for paragraphs */
+    .item p {
+      font-size: 14px;
+    }
+  }
+  
+
+
+
+
+  
+
+
+
+  @media screen and (max-width: 768px) {
+    /* Hide the h4, paragraphs, button, and footer links */
+    #contact h4,
+    #contact p,
+    #contact button,
+    #contact .footer-link,
+    #contact .form-group {
+      display: none !important;
+    }
+    
+      /* Show only the 'CONTACTEZ-NOUS' h4 element */
+      #contact .text-head {
+        display: block !important;
+        font-size: 2.5rem;
+      }
+  
+    .footer {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  
+    /* Move the logo to the top and center it */
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+      text-align: center;
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
+      order: -2; /* Ensure logo is at the top */
+    }
+  
+    /* Center contact information below the logo */
+    #contact ul {
+      text-align: center;
+      padding: 0;
+      list-style: none;
+      margin-top: 0; /* Remove extra space above the list */
+      color: white !important; /* Ensure text color is white */
+    }
+  
+    #contact ul li {
+      margin-bottom: 10px;
+    }
+  
+    /* Center copyright information below the contact information */
+    .copyright-part {
+      text-align: center;
+      margin-top: 20px;
+    }
+  
+    /* Center social media icons below the copyright information */
+    .social_icon ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 20px; /* Add space above the icons */
+    }
+  
+    .social_icon ul li {
+      margin: 0 10px;
+    }
+  }
+  

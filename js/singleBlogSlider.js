@@ -109,7 +109,7 @@ const getSingleBlogDatas = async () => {
                 let thumbPost_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["thumb post-img"]});
                 let postType_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["post-type"]});
                 let fa_trowel_bricks_i = createElementItem("i", {_attribute: ["class", "aria-hidden"], _attributeContent: ["fa-solid fa-trowel-bricks", "true"]});
-                let thumbPost_a = createElementItem("a", {_attribute: ["href"], _attributeContent: [`../civil-engineer-server/uploads/${singleBlogData?.title.replace(" ", "-") + "-" + (i+1) + "." + singleImage?.contentType.split("/")[1]}`]});
+                let thumbPost_a = createElementItem("a", {_attribute: ["href"], _attributeContent: [singleImage?.path || ""]});
                 let thumbPost_img = createElementItem("img", {
                     _attribute: ["src", "style"], 
                     _attributeContent: [singleImage?.path || "", "height: 600px; min-width: 100%;"]});

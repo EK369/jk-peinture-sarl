@@ -190,7 +190,7 @@ ul {
 a {
 	cursor: pointer;
 	text-decoration: none;
-	color: #999999;
+	color: #777;
 	/* color: #ffffffc0; */
 	transition: all 0.25s ease 0s;
 	-moz-transition: all 0.25s ease 0s;
@@ -210,12 +210,19 @@ a, a:focus, a:active, a:link, img {
 	/* color: #FFE200; */
 	text-decoration: none;
 }
+.team-p {
+	color: black;
+}
+
 p {
 	margin: 0;
 	padding: 0;
+	color: white;
 }
+
+
 h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-	color: #000;
+	color: white;
 	font-family: 'Raleway', sans-serif;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -1518,7 +1525,7 @@ header {
 	padding: 5px 15px;
 }
 .tab-bar ul li.active a, .tab-bar ul li:hover a {
-	color: black;
+	color: #FFE200;
 	font-weight: bold;
 }
 .isotope {
@@ -1824,12 +1831,12 @@ blockquote {
 }
 @media (max-width: 786px){
   .projectFactsWrap .item {
-     flex: 0 0 50%;
+     flex: 0 0 45%;
   }
 }
 @media (min-width: 376px) and (max-width: 786px) {
 	.projectFactsWrap .item:last-child {
-	height: 340px;
+	height: auto;
   }
 }
 /* =====  End Project counter css  ===== */
@@ -2423,7 +2430,8 @@ select {
 		width: 50%;
 	}
 	.three-col-work .grid-item {
-		width: 94%;
+		/* width: 94%; */
+		width: 100%;
 	}
 	.client .owl-nav{
 		display:none;	
@@ -2455,12 +2463,21 @@ select {
 	display: inline;
 }
 .portfolio-filter.nav.navbar-nav > li {
-	background: #f5f5f5 none repeat scroll 0 0;
+	/* background: #f5f5f5 none repeat scroll 0 0; */
 	margin: 2px 0;
 }
 .three-col-work .grid-item, .three-col-blog .blog-item, .two-col-work .grid-item, .two-col-blog .blog-item, .four-col-work .grid-item {
 	width: 100%;
 }
+
+
+.three-col-work .grid-item, .three-col-blog .blog-item, .two-col-work .grid-item, .two-col-blog .blog-item, .four-col-work .grid-item {
+	width: 100% !important;
+}
+
+
+
+
 .circle {
 	width: 20%!important;
 }

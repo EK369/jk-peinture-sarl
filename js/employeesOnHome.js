@@ -47,7 +47,7 @@ const getEmployeesData = () => {
                 //     progress_3: !!blog?.progress[2] ? blog?.progress[2] : 0,
                 //     progress_4: !!blog?.progress[3] ? blog?.progress[3] : 0
                 // }
-                team_a[blogsDataLength - 1 - i].setAttribute("href", `../civil-engineer-server/uploads/${blog?.title.replace(" ", "-") + "-" + 1 + "." + blog?.image[0]?.contentType.split("/")[1]}`);
+                team_a[blogsDataLength - 1 - i].setAttribute("href", blog?.image[0]?.path || "");
                 team_img[blogsDataLength - 1 - i].setAttribute("src", blog?.image[0]?.path || "");
                 team_title_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
                 team_title_a[blogsDataLength - 1 - i].appendChild(document.createTextNode(blog?.title));
@@ -62,7 +62,7 @@ const getEmployeesData = () => {
                 let blogImages = blogsDataOnHome[i].image;
                 if(creativeCount != CREATIVE_IMAGES_TO_BE_SHOWN)
                     for (let j = 0; j < blogImages.length; j++) {
-                        creative_a[creativeCount].setAttribute("href", `../civil-engineer-server/uploads/${blog?.title.replace(" ", "-") + "-" + (j + 1) + "." + blogImages[j]?.contentType.split("/")[1]}`);
+                        creative_a[creativeCount].setAttribute("href", blog?.image[0]?.path || "");
                         creative_a[creativeCount].setAttribute("title", blog?.alt);
                         creative_img[creativeCount].setAttribute("src", blog?.image[0]?.path || "");
                         creative_img_title[creativeCount].appendChild(document.createTextNode(blogsDataOnHome[i].title));

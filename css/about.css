@@ -79,7 +79,7 @@
   
   .imgContainer {
     position: relative;
-    width: 48%;
+    /* width: 48%; */
   }
   
   .responsive-container-block.textSide {
@@ -162,10 +162,17 @@
     padding-left: 0px;
   }
   
+
+
+  .text-bold.mtb_20 {
+    color: #FFE200;
+  }
+
+
   .text-blk.cardHeading {
     font-size: 18px;
     line-height: 28px;
-    color: black;
+    color: #FFE200;
     font-weight: 700;
     margin-top: 0px;
     margin-right: 0px;
@@ -174,7 +181,7 @@
   }
   
   .text-blk.cardSubHeading {
-    color: black;
+    color: white;
     line-height: 22px;
   }
   
@@ -262,13 +269,13 @@
       width: 60%;
     }
   
-    .responsive-container-block.textSide {
+    /* .responsive-container-block.textSide {
       margin-top: 0px;
       margin-right: 0px;
       margin-bottom: 0px;
       margin-left: auto;
       width: 70%;
-    }
+    } */
   
     .responsive-container-block.Container {
       flex-direction: column-reverse;
@@ -306,6 +313,12 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
+    }
+
+
+
+    .main_title {
+      font-size: 3rem !important;
     }
   
     .text-blk.subHeading {
@@ -367,6 +380,74 @@
       line-height: 14px;
     }
   }
+
+
+
+
+
+
+
+
+
+  @media (max-width: 768px) {
+    .responsive-container-block.textSide {
+      text-align: center;
+    }
+  
+    .cardText p {
+      text-align: center;
+    }
+  
+    .button-container {
+      /* display: flex; */
+      justify-content: center;
+      align-items: center;
+      gap: 15px; /* Adds space between buttons */
+      flex-wrap: wrap; /* Ensures buttons wrap to the next line if needed */
+    }
+  
+    .custom-btn {
+      margin: 10px 5px; /* Adds slight margin for spacing */
+    }
+  }
+
+
+
+
+
+
+
+  @media (max-width: 500px) {
+    .responsive-container-block.textSide {
+      /* padding: 0 15px; */
+    }
+  
+    .cardText p {
+      text-align: center;
+    }
+  
+    .button-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .custom-btn {
+      margin: 10px 0;
+    }
+
+
+    .padding-b {
+      padding: 15px !important;
+    }
+  }
+
+
+
+
+
+
+
   
   @media (max-width: 500px) {
     .imgContainer {
@@ -390,13 +471,15 @@
       width: 100%;
     }
   
-    .responsive-container-block.textSide {
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-bottom: 0px;
-      margin-left: 0px;
-    }
-  
+
+
+
+    
+
+
+
+
+
     .responsive-container-block.Container {
       padding-top: 0px;
       padding-right: 0px;
@@ -411,7 +494,7 @@
       padding-right: 20px;
       padding-bottom: 10px;
       padding-left: 20px;
-      padding: 0 30px 0 30px;
+      /* padding: 0 30px 0 30px; */
     }
   
     .redDots {
@@ -429,9 +512,9 @@
     }
   
     .responsive-container-block.textSide {
-      margin-top: 40px;
+      margin-top: 10px;
       margin-right: 0px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       margin-left: 0px;
     }
   

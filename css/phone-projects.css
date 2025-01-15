@@ -1,0 +1,295 @@
+@media (max-width: 600px) {
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+  }
+
+  .navbar-toggle {
+    height: 100%;
+    /* top:  !important; */
+    margin-top: 4.5% !important;
+  }
+
+  .navbar-brand {
+    padding: 0 !important;
+  }
+
+  .navbar-brand-name {
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 !important;
+    width: auto;
+  }
+
+  .navbar-brand-name-logo {
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+  }
+
+  .navbar-brand-name-page {
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 10px !important; /* Adjust the width to make the logo smaller */
+  }
+
+
+
+
+  .navbar-collapse {
+      display: block !important; /* Ensure the navbar is fully expanded */
+      height: 100% !important;
+      overflow: visible !important; /* Ensure all items are visible */
+    }
+
+    ul {
+      height: auto !important;
+      color: black;
+    }
+
+    .nav.navbar-nav {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+  
+    .nav > li {
+      display: block; /* Ensure all list items are displayed as block elements */
+    }
+
+    li.active a {
+      color: #FFE200 !important;
+    }
+  
+    ul a {
+      color: rgb(175, 175, 175) !important;
+      border: none !important;
+    }
+    .nav > li > a {
+      display: block;
+      padding: 10px 15px; /* Adjust padding as needed */
+      text-align: center; /* Align text to the left */
+    }
+
+    .active {
+      font-weight: bold; /* Bold text */
+    }
+}
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Query for Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    /* Ensure the body and html are responsive and remove overflow */
+    html, body {
+      width: 100%;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Prevent any content from causing horizontal scrolling */
+    .container, .navbar-collapse, .two-col-blog, .blog-item, .breadcrumb, .button-container {
+      /* width: 100%; */
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+
+
+
+    .box-holder {
+      margin-bottom: 30px !important;
+    }
+
+
+
+    .heading-part  {
+        padding: 15px !important;
+    }
+    
+    .blog {
+        padding: 15px !important;
+    }
+
+
+    /* Adjust breadcrumb to be contained within the viewport */
+    .breadcrumb {
+      display: block;
+      overflow: hidden;
+      white-space: nowrap; /* Prevent breadcrumb from wrapping */
+      text-overflow: ellipsis; /* Truncate long text with ellipsis */
+      padding: 0 15px; /* Add some padding to the sides */
+    }
+    
+    /* Fix the button container width and center it */
+    .button-container {
+      display: flex;
+      justify-content: center; /* Center the button */
+      width: 100%;
+      padding: 0 15px; /* Prevent overflowing */
+    }
+  
+    .custom-btn, #more-less-btn {
+      width: auto; /* Adjust button width to fit within the container */
+      padding: 12px 20px;
+      font-size: 1.4rem;
+      margin-top: 10px;
+      text-align: center; /* Ensure button text is centered */
+    }
+  
+    /* Adjust the image size within blog-item */
+    .two-col-blog .blog-item img {
+      width: 100%; /* Make the image responsive */
+      max-width: 100%; /* Ensure image doesn't exceed container */
+      height: auto; /* Maintain aspect ratio */
+      object-fit: cover; /* Ensure images fill the container */
+      margin: 0 auto; /* Center the image */
+    }
+  
+    /* Adjust fonts and layout */
+    .main_title {
+      font-size: 2rem; /* Reduce title size for mobile */
+      text-align: center; /* Center the title */
+    }
+
+    .btn-show {
+       visibility: visible !important;
+    }
+    
+    .respo-p {
+      font-size: 1.5rem !important; /* Adjust text size */
+      font-weight: 100 !important;
+      padding-bottom: 30px;
+      text-align: center; /* Center-align text */
+    }
+
+    .row {
+      visibility: visible !important;
+    }
+  
+    h2 {
+      font-size: 3rem !important;
+    }
+  
+    /* Optional: Ensure no visible scrollbar */
+    ::-webkit-scrollbar {
+      display: none; /* Remove scrollbar for Webkit browsers */
+    }
+  }
+  
+
+
+
+
+
+  
+
+  
+  @media screen and (max-width: 768px) {
+    /* Hide the h4, paragraphs, button, and footer links */
+    
+    #contact p,
+    #contact button,
+    #contact .footer-link,
+    #contact .form-group {
+        display: none !important;
+    }
+
+
+    .text-show {
+      visibility: visible !important;
+    }
+    
+    p {
+        font-size: 1.3rem !important;
+    }
+    
+        /* Show only the 'CONTACTEZ-NOUS' h4 element */
+        #contact .text-head {
+        display: block !important;
+        font-size: 2.5rem;
+        }
+    
+    .footer {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+    
+    /* Move the logo to the top and center it */
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        order: -2; /* Ensure logo is at the top */
+    }
+    
+    /* Center contact information below the logo */
+    #contact ul {
+        text-align: center;
+        padding: 0;
+        list-style: none;
+        margin-top: 0; /* Remove extra space above the list */
+        color: white !important; /* Ensure text color is white */
+    }
+    
+    #contact ul li {
+        margin-bottom: 10px;
+    }
+    
+    /* Center copyright information below the contact information */
+    .copyright-part {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    /* Center social media icons below the copyright information */
+    .social_icon ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-top: 20px; /* Add space above the icons */
+    }
+    
+    .social_icon ul li {
+        margin: 0 10px;
+    }
+    
+    .foot-h {
+        display: none;
+    }
+    }
+    

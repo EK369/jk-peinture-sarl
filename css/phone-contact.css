@@ -1,0 +1,243 @@
+@media (max-width: 600px) {
+    .navbar-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      height: auto;
+    }
+  
+    .navbar-toggle {
+      height: 100%;
+      /* top:  !important; */
+      margin-top: 4.5% !important;
+    }
+  
+    .navbar-brand {
+      padding: 0 !important;
+    }
+  
+    .navbar-brand-name {
+      order: 2;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 !important;
+      width: auto;
+    }
+  
+    .navbar-brand-name-logo {
+      display: flex;
+      padding: 0 !important;
+      align-items: center;
+    }
+  
+    .navbar-brand-name-page {
+      display: block;
+      font-size: 1.8rem;
+      margin-left: 0;
+    }
+  
+    .logo {
+      display: block;
+      width: 10px !important; /* Adjust the width to make the logo smaller */
+    }
+
+
+
+
+    .navbar-collapse {
+        display: block !important; /* Ensure the navbar is fully expanded */
+        height: 100% !important;
+        overflow: visible !important; /* Ensure all items are visible */
+      }
+
+      ul {
+        height: auto !important;
+        color: black;
+      }
+
+      .nav.navbar-nav {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+    
+      .nav > li {
+        display: block; /* Ensure all list items are displayed as block elements */
+      }
+
+      li.active a {
+        color: #FFE200 !important;
+      }
+    
+      ul a {
+        color: rgb(175, 175, 175) !important;
+        border: none !important;
+      }
+      .nav > li > a {
+        display: block;
+        padding: 10px 15px; /* Adjust padding as needed */
+        text-align: center; /* Align text to the left */
+      }
+
+      .active {
+        font-weight: bold; /* Bold text */
+      }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .row {
+        margin: 10px;
+    }
+    .row1 {
+        margin: 10px !important;
+    }
+
+    .row h5 {
+        font-size: 2rem !important;
+    }
+
+    .pt_80 {
+        padding-top: 40px !important;
+    }
+
+    .row .respo-travail {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 25px !important;
+        margin-bottom: 0 !important;
+
+        width: 100% !important;
+    }
+
+
+    .h2-title {
+        font-size: 3rem !important;
+    }
+
+    .p-style {
+        font-size: 1.5rem !important;
+    }
+
+    .btn-style {
+        margin-left: 0 !important;
+    }
+
+
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+@media screen and (max-width: 768px) {
+    /* Hide the h4, paragraphs, button, and footer links */
+    
+    #contact p,
+    #contact button,
+    #contact .footer-link,
+    #contact .form-group {
+        display: none !important;
+    }
+
+
+    .text-show {
+      visibility: visible !important;
+    }
+    
+    p {
+        font-size: 1.3rem !important;
+    }
+    
+        /* Show only the 'CONTACTEZ-NOUS' h4 element */
+        #contact .text-head {
+        display: block !important;
+        font-size: 2.5rem;
+        }
+    
+    .footer {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    /* Move the logo to the top and center it */
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+        order: -2; /* Ensure logo is at the top */
+    }
+    
+    /* Center contact information below the logo */
+    #contact ul {
+        text-align: center;
+        padding: 0;
+        list-style: none;
+        margin-top: 0; /* Remove extra space above the list */
+        color: white !important; /* Ensure text color is white */
+    }
+    
+    #contact ul li {
+        margin-bottom: 10px;
+    }
+    
+    /* Center copyright information below the contact information */
+    .copyright-part {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    /* Center social media icons below the copyright information */
+    .social_icon ul {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        margin-top: 20px; /* Add space above the icons */
+    }
+    
+    .social_icon ul li {
+        margin: 0 10px;
+    }
+    
+    .foot-h {
+        display: none;
+    }
+    }
+    

@@ -118,7 +118,7 @@ Image credits: unsplash.com
 
 
 
-.fade-carousel .carousel-inner .item .hero {
+/* .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 2s all ease-in-out .1s;
        -moz-transition: 2s all ease-in-out .1s; 
@@ -134,6 +134,38 @@ Image credits: unsplash.com
          -o-transition: 2s all ease-in-out .1s; 
             transition: 2s all ease-in-out .1s;   
             
+} */
+
+
+
+.fade-carousel .carousel-inner,
+.fade-carousel .carousel-inner .item {
+    transition: none; /* Remove the transition effect from the slides themselves */
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    visibility: hidden; /* Ensure the text is hidden during the transition */
+    -webkit-transition: opacity 2s ease-in-out, visibility 0s 2s;
+       -moz-transition: opacity 2s ease-in-out, visibility 0s 2s;
+        -ms-transition: opacity 2s ease-in-out, visibility 0s 2s;
+         -o-transition: opacity 2s ease-in-out, visibility 0s 2s;
+            transition: opacity 2s ease-in-out, visibility 0s 2s;
+}
+
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    visibility: visible; /* Make the text visible when the slide is active */
+    -webkit-transition: opacity 2s ease-in-out, visibility 0s;
+       -moz-transition: opacity 2s ease-in-out, visibility 0s;
+        -ms-transition: opacity 2s ease-in-out, visibility 0s;
+         -o-transition: opacity 2s ease-in-out, visibility 0s;
+            transition: opacity 2s ease-in-out, visibility 0s;
+}
+
+/* Add this to remove the black background during transitions */
+.fade-carousel .carousel-inner .item {
+    transition: none; /* No transition on the item itself */
 }
 /* #myelement{
   animation-name: myAnimation;
@@ -200,27 +232,27 @@ Image credits: unsplash.com
 }
 .fade-carousel .slides .slide-1 {
   /* background-image: url(../images/mainbanner01_01.jpg);  */
-  background-image: url(../../image/Projekti8/projekti001.jpeg); 
+  background-image: url(../image/Projekti8/Projekti84.jpeg); 
 }
 .fade-carousel .slides .slide-2 {
   /* background-image: url(../images/mainbanner02_02.jpg); */
-  background-image: url(../../image/Projekti5/projekti1.jpg); 
+  background-image: url(../image/Projekti5/Projekti53.jpeg); 
 }
 .fade-carousel .slides .slide-3 {
   /* background-image: url(../images/mainbanner03_03.jpg); */
-  background-image: url(../../image/Projekti5/projekti2.jpeg); 
+  background-image: url(../image/Projekti3/Projekti35.jpeg); 
 }
 .fade-carousel .slides .slide-4 {
-  background-image: url(../../image/Projekti5/projekti6.jpeg); 
+  background-image: url(../image/Projekti5/Projekti56.jpeg); 
 }
 .fade-carousel .slides .slide-5 {
-  background-image: url(../../image/Projekti5/projekti5.jpeg);
+  background-image: url(../image/Projekti5/Projekti57.jpeg);
 }
 .fade-carousel .slides .slide-6 {
-  background-image: url(../../image/Projekti3/projekti16.jpeg);
+  background-image: url(../image/Projekti3/Projekti36.jpeg);
 }
 .fade-carousel .slides .slide-7 {
-  background-image: url(../../image/Projekti1/2.jpg);
+  background-image: url(../image/Projekti1/Projekti12.jpeg);
 }
 
 /********************************/
@@ -231,4 +263,66 @@ Image credits: unsplash.com
 }
 @media screen and (max-width: 640px){
     .hero h1 { font-size: 4em; }    
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+  /* Adjust the hero container */
+  .hero {
+    width: 90%; /* Make the hero container 90% of the screen width for smaller devices */
+    padding: 20px; /* Reduce padding for a better fit */
+    background: rgba(3, 3, 3, 0.3); /* Slightly change transparency for better readability */
+    border-radius: 10px; /* Reduce border radius for mobile */
+    backdrop-filter: blur(5px); /* Slight blur effect to maintain readability */
+    top: 45%; /* Adjust vertical position on smaller screens */
+    transform: translate(-50%, -50%); /* Center the content */
+  }
+
+  /* Adjust title font size */
+  .hero h1 {
+    font-size: 2.5em; /* Reduce font size for better readability */
+    line-height: 4rem; /* Adjust line height */
+  }
+
+  /* Adjust subtitle font size */
+  .hero h3 {
+    font-size: 1.4em; /* Adjust subtitle size for better fit */
+    line-height: 1.8rem; /* Adjust line height for readability */
+  }
+
+  /* Adjust button font size and padding */
+  .hero .custom-btn {
+    font-size: 1.1em; /* Adjust button font size */
+    padding: 10px 20px; /* Reduce button padding for mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .hero {
+    padding: 15px; /* Reduce padding even more */
+    top: 45%; /* Adjust vertical position */
+    left: 50%; /* Ensure centering */
+    transform: translate(-50%, -35%); /* Adjust for small screens */
+  }
+
+  .hero h1 {
+    font-size: 2em; /* Reduce font size further for small screens */
+    line-height: 3.5rem; /* Adjust line height */
+  }
+
+  .hero h3 {
+    font-size: 1.2em; /* Further reduce subtitle font size */
+  }
+
+  .hero .custom-btn {
+    font-size: 1em; /* Adjust button font size */
+    padding: 8px 15px; /* Further reduce button padding */
+  }
+  
+  
 }

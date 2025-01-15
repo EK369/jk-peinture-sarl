@@ -30,10 +30,21 @@
   <link rel="stylesheet" type="text/css" href="css/animation.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
-  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="shortcut icon" href="image/logoJK-removebg-preview.png">
   <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
   <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
   <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="./css/phone-single-blog.css">
+  
+  
+  
+  
+  
+  
   <style>
     .owl-dots {
       background-color: transparent;
@@ -41,19 +52,20 @@
       height: 10px;
       position: relative;
       display: flex;
+      
       align-items: center;
       justify-content: center;
       margin: 10px 0;
     }
     .owl-dot {
-      background-color: steelblue;
+      background-color: #FFE200;
       width: 10px;
       height: 10px;
-      border: 1px solid steelblue;
+      border-radius: 15px;
+      /* border: 1px solid black; */
       margin: 0 3px;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       border-color: #28282bb0;
-      opacity: 0.3;
     }
     /* .owl-dot:first-child {
       opacity: 0.2;
@@ -71,8 +83,12 @@
       opacity: 0.2;
     } */
     .owl-dot.active {
-      background-color: steelblue;
-      opacity: 1;
+      background-color: #FFE200;
+      width: 25px;
+      height: 10px;
+      border: none;
+      border-radius: 10px;
+      /* opacity: 1; */
     }
     .slider-post {
       height: inherit;
@@ -127,7 +143,10 @@
   </style>
 </head>
 
-<body>
+<body style="
+overflow: scroll;
+background-color: #1a1a1a; /* Dark background for contrast */
+">
   <!-- =====  LODER  ===== -->
   <div id="gif-loder" class="loder"></div>
   <div class="wrapper">
@@ -178,12 +197,14 @@
                 <a href="./services.html">SERVICES</a>
               </li>
               
-              <li class="dropdown">
+              <!-- <li class="dropdown"> -->
+                <li class="active">
                 <!-- <a href="blog_2col_grid.html" class="dropdown-toggle" data-toggle="dropdown">Blog</a> -->
                 <a href="blog_2col_grid.html">PROJETS</a>
               </li>
               
-              <li class="dropdown">
+              <!-- <li class="dropdown"> -->
+                <li class="active">
                 <a href="contact.html">CONTACTEZ-NOUS</a>
               </li>
             </ul>
@@ -214,10 +235,10 @@
           <div style="width: 99.5%; height: 70px; "></div>
           <div class="tree-branch"></div>
         </div>
-        <h1 class="mb_20">Single Project</h1>
+        <h1 class="mb_20">PROJET INDIVIDUEL</h1>
         <ul class="right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="blog_2col_grid.html">Projects</a></li>
+          <li><a href="index.html">ACCUEIL</a></li>
+          <li><a href="blog_2col_grid.html">PROJETS</a></li>
           <li class="active">Single Project</li>
         </ul>
     </div>
@@ -226,62 +247,34 @@
   <!-- =====  CONTAINER START  ===== -->
   <!-- Single Blog  -->
   <section class="ptb_80">
-    <div class="container">
+    <div class="container container1">
       <div class="row">
         <div class="blog-item listing-effect col-md-12 mb_50">
           <div class="box-holder">
              <div class="post-format">
               <div class="slider-post owl-carousel">
-                <!-- <div class="item">
-                  <div class="thumb post-img">
-                    <div class="post-type"> 
-                      <i class="fa-solid fa-trowel-bricks" aria-hidden="true"></i> 
-                    </div>
-                    <a id="thumbPost-a-1">
-                      <img id="thumbPost-img-1" style="height: 600px;">
-                    </a>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb post-img">
-                    <div class="post-type"> <i class="fa-solid fa-trowel-bricks" aria-hidden="true"></i> </div>
-                    <a id="thumbPost-a-2"><img id="thumbPost-img-2" style="height: 600px;"></div></a>
-                    
-                </div>
-                <div class="item">
-                  <div class="thumb post-img">
-                    <div class="post-type"> <i class="fa-solid fa-trowel-bricks" aria-hidden="true"></i> </div>
-                    <a id="thumbPost-a-3"><img id="thumbPost-img-3" style="height: 600px;"></div></a>
-                    
-                </div>
-                <div class="item">
-                  <div class="thumb post-img">
-                    <div class="post-type"> <i class="fa-solid fa-trowel-bricks" aria-hidden="true"></i> </div>
-                    <a id="thumbPost-a-4"><img id="thumbPost-img-4" style="height: 600px;"></a>
-                  
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb post-img">
-                    <div class="post-type"> <i class="fa-solid fa-trowel-bricks" aria-hidden="true"></i> </div>
-                    <a id="thumbPost-a-5"><img id="thumbPost-img-5" style="height: 600px;"></a>
-                    
-                  </div> -->
+                
                 </div> 
               </div>
             </div>
             <div class="post-info ptb_20" style="top: 20px; width: 100%;">
               <div class="post-info-text" id="post-info-title">
-                <h3 class="text-bold text-uppercase mb_10"> <a id="postInfo-h3"></a> </h3>
-                <i class="far fa-edit edit_btn" onclick="edit_title(this)"></i>
+                <h3 class="text-bold text-uppercase mb_10"> <a style="color: white;" id="postInfo-h3"></a> </h3>
+                <!-- <i class="far fa-edit edit_btn" onclick="edit_title(this)"></i> -->
               </div>
               <div class="post-info-text" id="post-info-description">
-                <p id="postInfo-p"></p>
-                <i class="far fa-edit edit_btn" onclick="edit_title(this)"></i>
+                <p style="
+                    color: white;
+                  " id="postInfo-p"></p>
+                <!-- <i class="far fa-edit edit_btn" onclick="edit_title(this)"></i> -->
               </div>
             </div>  
             <div class="details ptb_20">
-              <div class="date" id="date-div"> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
+              <div style="
+                font-size: 2rem;
+    color: white;
+    font-weight: bold;
+               " class="date" id="date-div"> <i class="fa fa-calendar" aria-hidden="true"></i> </div>
             </div>
 
             
@@ -297,40 +290,40 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3 mtb_40 text-left wow fadeInUp" data-wow-delay=".2s">
-          <h4 class="footer-title ptb_20 light uppr ">Contact Us</h4>
-          <ul>
-            <li>B-14 Collins Street West Victoria 2386 lorems colerfes state</li>
-            <li>(+123) 456 789 - (+024) 666 888</li>
-            <li>Contact@yourcompany.com</li>
+          <h4 style="color: #FFE200; font-weight: bold;" class="footer-title ptb_20 light uppr text-head">CONTACTEZ-NOUS</h4>
+          <ul style="color: #FFE200;">
+            <li><i class="fa fa-map-marker-alt"></i> Grand-Rue 45, Vaulruz<br> Switzerland 1627</li>
+            <li><i class="fa fa-phone"></i> 079/290 81 12</li>
+            <li><i class="fa fa-envelope"></i> info@jkpeinture.ch</li>
           </ul>
         </div>
         <div class="col-md-6 wow fadeInUp" data-wow-delay=".4s">
-          <div class="footer-logo mt_20 mb_20"> <a href="index.html"> <img src="images/brand/logo-white.png" alt="JK PEINTURE SAINT"> </a> </div>
+          <div class="footer-logo mt_20 mb_20"> <a href="index.html"> <img src="image/logoJK-removebg-preview.png" alt="JK PEINTURE SÀRL"> </a> </div>
           <div class="footer-link">
             <ul>
-              <li><a href="index.html">Home </a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="services.html">Creative Work</a></li>
-              <li><a href="blog_2col_grid.html">Projects</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="index.html">ACCUEIL</a></li>
+              <li><a href="about.html">PROPS DE NOUS</a></li>
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="blog_2col_grid.html">PROJETS</a></li>
+              <li><a href="contact.html">CONTACTEZ-NOUS</a></li>
             </ul>
           </div>
-          <div class="copyright-part mtb_10">@ 2023 All Rights Reserved JK PEINTURE SAINT</div>
+          <div style="margin-top: 30px;" class="copyright-part mtb_10">@ 2025 All Rights Reserved JK PEINTURE SÀRL</div>
           <div class="social_icon">
             <ul>
               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-              <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
             </ul>
           </div>
         </div>
         <div class="col-md-3 mtb_40 text-right wow fadeInUp" data-wow-delay=".6s">
-          <h4 class="footer-title ptb_20 light uppr">SIGN UP OUR NEWSLETTER</h4>
+          <h4 style="color: #FFE200; font-weight: bold;" class="footer-title foot-h ptb_20 light uppr">TRAVAILLONS ENSEMBLE</h4>
+          <p style="color: #FFE200;">Contactez-nous par e-mail
+            ou par téléphone</p>
           <div class="form-group light">
-            <input placeholder="Enter Your Email Address" type="text">
+            <!-- <input placeholder="Enter Your Email Address" type="text"> -->
             <br>
-            <button class="custom-btn btn-12 light mt_10" >Subscribe</button>
+            <button class="custom-btn btn-12 light mt_10">CONTACTEZ-NOUS</button>
           </div>
         </div>
       </div>

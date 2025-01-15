@@ -1,0 +1,374 @@
+h1,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    /* margin-top: 10px; */
+}
+
+h1 {
+    position: relative;
+    max-width: max-content;
+    /* margin: 2rem auto 5rem auto; */
+}
+
+/* h1::after {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 5px;
+    background-color: #FFE200;
+    bottom: -2rem;
+    left: 25px;
+} */
+
+
+
+.services-container {
+    max-width: 1200px;
+    /* padding-top: 10% !important; */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.button-btn {
+                
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    margin-top: 20%;
+    /* position: fixed; */
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE200;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-btn:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+}
+
+.button-btn:focus {
+    outline: none;
+}
+
+.button-btn:active {
+    transform: translateY(2px);
+}
+
+.service-card {
+    cursor: pointer;
+    gap: 15px;
+    
+    width: 500px;
+    /* height: 500px; */
+    margin: 10px;
+    /* border: 1px solid black; */
+    padding: 25px;  /* Adjusted padding to match your provided style */
+    text-align: center;
+    border-radius: 25px;
+    background: linear-gradient(140deg, rgba(37, 38, 40, 1), rgba(37, 38, 40, 1));  /* Added background */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);  /* Added box-shadow */
+    color: white;  /* Added color */
+    z-index: 3;  /* Added z-index */
+    margin-bottom: 25px !important;  /* Ensured margin-bottom is applied */
+    transition: all 0.3s ease-in-out;
+}
+
+
+.icon-container {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;  /* Ensures the image is centered inside the container */
+}
+
+.icon-container img {
+    width: 60px;  /* You can adjust the size of the image */
+    height: 60px;  /* Maintain aspect ratio, or set a specific size */
+    object-fit: contain;  /* Ensures the image fits without distortion */
+}
+    
+::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Opera */
+}
+.service-card:hover {
+    /* box-shadow: 0 0 30px 0 lightgreen; */
+    transform: scale(1.1);
+}
+
+.service-card a {
+    /* color: lightgreen; */
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.main-con {
+    margin-top: 80px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .service-card {
+        /* margin-top: 30%; */
+        width: 100%;
+
+        padding: 20px; /* Adjust padding to fit content */
+        box-sizing: border-box; 
+    }
+
+    .main-con {
+        margin-top: 15%;
+        
+    }
+
+    .services-container {
+        padding: 15px !important;
+    }
+
+    .respo-h {
+        font-size: 3rem !important;
+        margin-left: 50%;
+        margin-right: 50%;
+        margin-bottom: 0% !important;
+        margin-top: 0% !important;
+    }
+
+    h3 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+    .respo-p {
+        font-size: 2rem !important;
+        margin: 15px;
+        font-weight: 400 !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .navbar-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+  }
+
+  .navbar-toggle {
+    height: 100%;
+    /* top:  !important; */
+    margin-top: 4.5% !important;
+  }
+
+  .navbar-brand {
+    padding: 0 !important;
+  }
+
+  .navbar-brand-name {
+    order: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 !important;
+    width: auto;
+  }
+
+  .navbar-brand-name-logo {
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+  }
+
+  .navbar-brand-name-page {
+    display: block;
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .logo {
+    display: block;
+    width: 10px !important; /* Adjust the width to make the logo smaller */
+  }
+
+
+
+
+  .navbar-collapse {
+      display: block !important; /* Ensure the navbar is fully expanded */
+      height: 100% !important;
+      overflow: visible !important; /* Ensure all items are visible */
+    }
+
+    ul {
+      height: auto !important;
+      color: black;
+    }
+
+    .nav.navbar-nav {
+      padding-left: 25px !important;
+      padding-right: 25px !important;
+    }
+  
+    .nav > li {
+      display: block; /* Ensure all list items are displayed as block elements */
+    }
+
+    li.active a {
+      color: #FFE200 !important;
+    }
+  
+    ul a {
+      color: rgb(175, 175, 175) !important;
+      border: none !important;
+    }
+    .nav > li > a {
+      display: block;
+      padding: 10px 15px; /* Adjust padding as needed */
+      text-align: center; /* Align text to the left */
+    }
+
+    .active {
+      font-weight: bold; /* Bold text */
+    }
+}
+              
+            
+
+
+
+
+
+
+
+
+
+  
+
+@media screen and (max-width: 768px) {
+  /* Hide the h4, paragraphs, button, and footer links */
+  
+  #contact p,
+  #contact button,
+  #contact .footer-link,
+  #contact .form-group {
+      display: none !important;
+  }
+
+
+  .text-show {
+    visibility: visible !important;
+  }
+  
+  p {
+      font-size: 1.3rem !important;
+      text-align: center !important;
+  }
+  
+      /* Show only the 'CONTACTEZ-NOUS' h4 element */
+      #contact .text-head {
+      display: block !important;
+      font-size: 2.5rem;
+      }
+  
+  .footer {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+  }
+  
+  /* Move the logo to the top and center it */
+  .footer-logo {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 20px !important;
+      margin-bottom: 20px !important;
+      order: -2; /* Ensure logo is at the top */
+  }
+  
+  /* Center contact information below the logo */
+  #contact ul {
+      text-align: center;
+      padding: 0;
+      list-style: none;
+      margin-top: 0; /* Remove extra space above the list */
+      color: white !important; /* Ensure text color is white */
+  }
+  
+  #contact ul li {
+      margin-bottom: 10px;
+  }
+  
+  /* Center copyright information below the contact information */
+  .copyright-part {
+      text-align: center;
+      margin-top: 20px;
+  }
+  
+  /* Center social media icons below the copyright information */
+  .social_icon ul {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 20px; /* Add space above the icons */
+  }
+  
+  .social_icon ul li {
+      margin: 0 10px;
+  }
+  
+  .foot-h {
+      display: none;
+  }
+  }
+  
