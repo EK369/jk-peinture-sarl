@@ -90,6 +90,16 @@
 
 
 
+
+  @media (min-width: 992px) {
+    .col-md-offset-3 {
+      margin-left: auto !important;
+      width: -webkit-fill-available !important;
+    }
+   }
+
+
+
   @media screen and (max-width: 768px) {
     /* Center the container and add some padding */
 
