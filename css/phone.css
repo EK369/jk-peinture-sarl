@@ -193,6 +193,7 @@
 
 
     .row {
+        flex-direction: column;
         padding-top: auto !important;
         padding-bottom: auto !important;
     }

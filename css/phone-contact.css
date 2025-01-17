@@ -101,6 +101,7 @@
 @media screen and (max-width: 768px) {
     .row {
         margin: 10px;
+        flex-direction: column !important;
     }
     .row1 {
         margin: 10px !important;

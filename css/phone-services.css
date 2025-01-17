@@ -143,6 +143,10 @@ h1 {
         box-sizing: border-box; 
     }
 
+    .row {
+        flex-direction: column !important;
+    }
+
     .main-con {
         margin-top: 15%;
         

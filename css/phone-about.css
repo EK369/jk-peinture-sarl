@@ -205,6 +205,7 @@
 
     .row {
         padding-top: auto !important;
+        flex-direction: column;
         padding-bottom: auto !important;
     }
 
@@ -233,7 +234,7 @@
             order: 2; /* Ensure buttons appear below text */
             /* display: flex; */
             justify-content: center;
-            margin-top: 20px;
+            /* margin-top: 20px; */
 
     }
 

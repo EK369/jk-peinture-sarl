@@ -288,10 +288,14 @@
             <!-- Contact FORM -->
             <div id="contact_form">
               <!-- <form id="contact_body" method="post" action="http://localhost:3000/contacts"> -->
-              <form id="contact_body" action="#">
+              <form id="contact_body" action="https://api.web3forms.com/submit" method="POST">
 
                 <!--                                <label class="full-with-form" ><span>Name</span></label>
--->
+-->   
+
+                <input type="hidden" name="access_key" value="594068ac-3772-46cc-8af1-65d6e9eecd48">
+              
+
                 <input style="color: white !important;" class="full-with-form " type="text" id="name" name="name" placeholder="Nom Complet" data-required="true" />
                 <!--                <label class="full-with-form" ><span>Email Address</span></label>
 -->
@@ -344,7 +348,7 @@
     <!-- =====  FOOTER START  ===== -->
     <div id="contact" class="footer ptb_100">
       <div class="container">
-        <div class="row">
+        <div class="row" style="display: flex; justify-content: center;">
           <div class="col-md-3 mtb_40 text-left wow fadeInUp" data-wow-delay=".2s">
             <h4 style="color: #FFE200; font-weight: bold;" class="footer-title ptb_20 light uppr text-head">CONTACTEZ-NOUS</h4>
             <ul style="color: #FFE200;">
@@ -499,7 +503,7 @@
         
     </script>
 
-  <script src="js/mail.js"></script>
+  <!-- <script src="js/mail.js"></script> -->
   <script src="js/wow.js"></script>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <!-- <script>

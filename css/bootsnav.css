@@ -50,7 +50,7 @@ nav.navbar.bootsnav{
     background-color: #252628;
     /* opacity: 0.9; */
     border: none;
-    /* border-bottom: solid 10px var(--main-color); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 9;
 }
 
