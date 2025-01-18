@@ -16,7 +16,7 @@ h1 {
     position: absolute;
     width: 75%;
     height: 5px;
-    background-color: #FFE200;
+    background-color: #e5c554;
     bottom: -2rem;
     left: 25px;
 } */
@@ -44,7 +44,7 @@ h1 {
     /* position: fixed; */
     justify-content: center;
     align-items: center;
-    background-color: #FFE200;
+    background-color: #e5c554;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -269,7 +269,7 @@ h1 {
     }
 
     li.active a {
-      color: #FFE200 !important;
+      color: #e5c554 !important;
     }
   
     ul a {

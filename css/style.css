@@ -40,7 +40,7 @@
 /* =====  GENERAL STYLE =====*/
 :root {
 	/* --main-color: var(--main-color) */
-	--main-color: #FFE200;
+	--main-color: #e5c554;
 }
 
 body, html {
@@ -207,7 +207,7 @@ a:hover, a:focus {
 }
 a, a:focus, a:active, a:link, img {
 	outline: none;
-	/* color: #FFE200; */
+	/* color: #e5c554; */
 	text-decoration: none;
 }
 .team-p {
@@ -536,7 +536,7 @@ h6 {
   font-weight: 600;
   border: none;
   border-radius: 10px;
-  background-color: #FFE200;
+  background-color: #e5c554;
   outline: none !important;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -1447,11 +1447,11 @@ header {
 	color: var(--main-color);
 }
 .breadcrumb li.active {
-	color: #FFE200;
+	color: #e5c554;
 	font-weight: bold;
 }
 .breadcrumb h1 {
-	color: #FFE200;
+	color: #e5c554;
 	font-size: 50px;
 	font-weight: 900;
   float: left;
@@ -1498,7 +1498,7 @@ header {
     margin: 0 auto;
 }
 .main_title {
-	color: #FFE200;
+	color: #e5c554;
 	padding-bottom: 10px;
 	display: inline-block;
 	font-weight: bold;
@@ -1525,7 +1525,7 @@ header {
 	padding: 5px 15px;
 }
 .tab-bar ul li.active a, .tab-bar ul li:hover a {
-	color: #FFE200;
+	color: #e5c554;
 	font-weight: bold;
 }
 .isotope {
@@ -1772,19 +1772,19 @@ blockquote {
 }
 .projectFactsWrap .item:nth-child(1){
   background: #252628;
-  border: 1px solid #FFE200;
+  border: 1px solid #e5c554;
 }
 .projectFactsWrap .item:nth-child(2){
   background: #252628;
-  border: 1px solid #FFE200;
+  border: 1px solid #e5c554;
 }
 .projectFactsWrap .item:nth-child(3){
   background: #252628;
-  border: 1px solid #FFE200;
+  border: 1px solid #e5c554;
 }
 .projectFactsWrap .item:nth-child(4){
   background: #252628;
-  border: 1px solid #FFE200;
+  border: 1px solid #e5c554;
 }
 .projectFactsWrap .item p.number{
   font-size: 40px;
@@ -1803,7 +1803,7 @@ blockquote {
 .projectFactsWrap .item span{
   width: 60px;
   background: rgba(255, 255, 255, 0.8);
-  border: 2px solid #FFE200;
+  border: 2px solid #e5c554;
   display: block;
   margin: 0 auto;
 }

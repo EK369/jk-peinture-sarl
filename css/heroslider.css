@@ -53,7 +53,7 @@ Image credits: unsplash.com
     margin: 0;
     padding: 0;
     line-height: 1.1;
-    color: #FFE200;
+    color: #e5c554;
 } */
 
 
@@ -94,14 +94,14 @@ Image credits: unsplash.com
   font-size: 4em;
   line-height: 7rem;
   font-weight: bold;
-  color: #FFE200; /* Adjust the color as needed */
+  color: #e5c554; /* Adjust the color as needed */
 }
 
 .hero .custom-btn {
   margin-top: 25px;
   padding: 13px 25px;
   /* background-color: rgba(255, 255, 255, 0.2); */
-  background-color: #FFE200;
+  background-color: #e5c554;
   border: none;
   color: black;
   font-size: 16px;
