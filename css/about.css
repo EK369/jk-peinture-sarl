@@ -37,7 +37,7 @@
     padding-right: 50px;
     padding-bottom: 0px;
     padding-left: 50px;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-right: 0px;
     margin-bottom: 50px;
     margin-left: 0px;
@@ -317,6 +317,21 @@
 
 
 
+
+    .cardImg {
+      width: 80px !important;
+      height: 80px !important;
+    }
+
+    .cardImgContainer {
+      margin-right: 0px !important;
+    }
+
+    .responsive-container-block.bigContainer {
+      margin-top: 0px !important;
+    }
+
+
     .main_title {
       font-size: 3rem !important;
     }
@@ -541,7 +556,7 @@
       margin-right: 0px;
       margin-bottom: 0px;
       margin-left: 0px;
-      font-size: 15px;
+      font-size: 1.4rem;
     }
   
     .blueDots {

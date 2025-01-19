@@ -177,8 +177,16 @@
     }
 
 
+    .main_title {
+      margin-bottom: 0 !important;
+    }
+
     .text-show {
       visibility: visible !important;
+    }
+
+    .contact-button {
+      justify-content: center;
     }
     
     p {

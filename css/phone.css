@@ -124,7 +124,7 @@
 
     /* Adjust the button */
     .custom-btn {
-        font-size: 1.5rem; /* Increase font size slightly */
+        font-size: 1.4rem; /* Increase font size slightly */
         padding: 12px 20px; /* Adjust button padding */
         margin-top: 15px; /* Add space above the button */
         width: 80%; /* Make the button width 80% of the container */
@@ -132,7 +132,7 @@
 
     /* Adjust the header text */
     .header1-text {
-        font-size: 2rem; /* Reduce font size for better fit */
+        font-size: 1.8rem; /* Reduce font size for better fit */
         text-align: center; /* Center the text */
         padding: 10px; /* Add space below the text */
     }
@@ -174,7 +174,7 @@
 
     /* Adjust heading size and line height for smaller screens */
     .cardHeading {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.2;
     }
 
@@ -258,7 +258,7 @@
       color: #000; /* Set the text color */
       border: none;
       padding: 10px 15px;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   
     /* Make grid container and grid items responsive */
@@ -293,6 +293,7 @@
   
     .grid-item {
       width: 100%; /* Take full width on mobile */
+      padding: 10%;
       max-width: -webkit-fill-available; /* Limit width for larger images */
     }
 
@@ -406,7 +407,7 @@
   
     /* Adjust titles and details */
     .team-title {
-      font-size: 2rem;
+      font-size: 1.8rem;
       margin-bottom: 10px;
     }
   

@@ -148,7 +148,7 @@ h1 {
     }
 
     .main-con {
-        margin-top: 15%;
+        margin-top: 40px !important;
         
     }
 
@@ -171,7 +171,7 @@ h1 {
 
 
     .respo-p {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
         margin: 15px;
         font-weight: 400 !important;
     }

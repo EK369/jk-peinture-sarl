@@ -180,7 +180,7 @@
   
     /* Adjust fonts and layout */
     .main_title {
-      font-size: 2rem; /* Reduce title size for mobile */
+      font-size: 1.8rem; /* Reduce title size for mobile */
       text-align: center; /* Center the title */
     }
 
@@ -189,7 +189,7 @@
     }
     
     .respo-p {
-      font-size: 1.5rem !important; /* Adjust text size */
+      font-size: 1.4rem !important; /* Adjust text size */
       font-weight: 100 !important;
       padding-bottom: 30px;
       text-align: center; /* Center-align text */
@@ -228,6 +228,10 @@
         display: none !important;
     }
 
+    .ptb_80 {
+      padding-top: 40px !important;
+    }
+
 
     .text-show {
       visibility: visible !important;
@@ -235,6 +239,11 @@
     
     p {
         font-size: 1.3rem !important;
+    }
+
+
+    .main_title {
+      margin-bottom: 0px !important;
     }
     
         /* Show only the 'CONTACTEZ-NOUS' h4 element */

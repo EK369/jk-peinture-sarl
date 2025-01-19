@@ -28,7 +28,33 @@ var progress_circle_h3 = document.querySelectorAll('#progress-circle-h3');
 </div> */}
 
 const blogsDataOnHome = [...blogsData]
-console.log("lenght::::", blogsDataOnHome)
+// console.log("lenght::::", blogsDataOnHome)
+
+
+
+
+// Function 2: Get employees blog
+const getEmployeesBlog = () => {
+    const blogsDataLength = blogsDataOnHome.length;
+
+    // Loop through all blogs (from 0 to blogsDataLength - 1)
+    for (let i = 0; i < blogsDataLength; i++) {
+        const blog = blogsDataOnHome[i];  // Get the current blog
+        const blogImages = blog?.image;   // Get the images of the current blog
+
+        // Ensure the DOM elements exist and are in the correct array order
+        if (creative_a[i] && creative_img[i] && creative_img_title[i]) {
+            // Check if the blog has images and update the elements accordingly
+            if (blogImages && blogImages.length > 0) {
+                creative_a[i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
+                creative_img[i].setAttribute("src", blog?.image[0]?.path || "");
+                creative_img_title[i].textContent = blog?.title || "No title available"; // Directly set the title to avoid appending multiple times
+            }
+        }
+    }
+};
+
+
 
 const getEmployeesData = () => {
     // try {
@@ -38,6 +64,8 @@ const getEmployeesData = () => {
         // await axios.get(`${mainURL}/blogs`).then(response => {
         //     const blogsDataOnHome = response?.data;
             const blogsDataLength = blogsDataOnHome.length;
+
+            // console.log(blogsDataLength)
             let creativeCount = 0;
             for (let i = blogsDataLength - 1; i >= blogsDataLength - PROJECTS_TO_BE_SHOWN_ON_HOME; i--) {
                 const blog = blogsDataOnHome[i];
@@ -58,20 +86,33 @@ const getEmployeesData = () => {
                     blog?.description
                 ));
                 // date_div[blogsDataLength - 1 - i].appendChild(document.createTextNode(" " + customDateFormat(blog?.registeredDate)));
-                more_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
-                let blogImages = blogsDataOnHome[i].image;
-                if(creativeCount != CREATIVE_IMAGES_TO_BE_SHOWN)
-                    for (let j = 0; j < blogImages.length; j++) {
-                        creative_a[creativeCount].setAttribute("href", blog?.image[0]?.path || "");
-                        creative_a[creativeCount].setAttribute("title", blog?.alt);
-                        creative_img[creativeCount].setAttribute("src", blog?.image[0]?.path || "");
-                        creative_img_title[creativeCount].appendChild(document.createTextNode(blogsDataOnHome[i].title));
-                        creative_img_meta_title[creativeCount].appendChild(document.createTextNode(blogsDataOnHome[i].alt));
-                        creativeCount++;
-                        if(creativeCount == CREATIVE_IMAGES_TO_BE_SHOWN) {
-                            break; 
-                        }
-                    }
+
+
+
+                // more_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
+                
+                // let blogImages = blogsDataOnHome[i].image;
+                // // console.log(blogImages)
+
+                // if(blogImages != CREATIVE_IMAGES_TO_BE_SHOWN){ 
+                //         creative_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`)
+                //         creative_img[blogsDataLength - 1 - i].setAttribute("src", blog?.image[0]?.path || "");
+                //         creative_img_title[blogsDataLength - 1 - i].appendChild(document.createTextNode(blogsDataOnHome[i].title));
+                //  }
+
+                // more_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
+                // let blogImages = blogsDataOnHome[i].image;
+                // if(creativeCount != CREATIVE_IMAGES_TO_BE_SHOWN)
+                // for (let j = 0; j < blogImages.length; j++) {
+                //     const blog = blogsDataOnHome[i];
+
+                //     creative_a[blogsDataLength - 1 - i].setAttribute("href", blog?.image[0]?.path || "");
+                //     creative_img[blogsDataLength - 1 - i].setAttribute("src", blog?.image[0]?.path || "");
+                //     creative_img_title[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
+                //     creative_img_title[blogsDataLength - 1 - i].appendChild(document.createTextNode(blog?.title));
+                // }
+
+
                 // progress_circle_h3[blogsDataLength - 1 - i].appendChild(document.createTextNode(blog?.title));
                 // client_title_strong[blogsDataLength - 1 - i].appendChild(document.createTextNode(blog?.title));
                 // client_title_div[blogsDataLength - 1 - i].appendChild(document.createTextNode(customDateFormat(blog?.registeredDate)));
@@ -98,7 +139,9 @@ const getEmployeesData = () => {
     // }
 }
 getEmployeesData();
+getEmployeesBlog();
 let yearsOnMarket = document.querySelector('.projectFactsWrap > div');
 let number1 = document.getElementById('number1');
 yearsOnMarket.setAttribute("data-number", new Date().getFullYear() - 2017);
 number1.innerHTML = new Date().getFullYear() - 2017;
+
