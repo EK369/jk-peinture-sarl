@@ -232,6 +232,10 @@
       padding-top: 40px !important;
     }
 
+    .col-md-6 {
+      padding-bottom: 0px !important;
+    }
+
 
     .text-show {
       visibility: visible !important;
