@@ -247,7 +247,16 @@
       padding: 0;
       margin: 0;
     }
+
+    .text-c {
+      padding: 15px;
+    }
     
+
+
+    .mb_20 {
+      margin-bottom: 0 !important;
+    }
 
     .portfolio-filter li {
       margin: 0 10px;

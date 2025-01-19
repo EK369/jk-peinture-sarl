@@ -33,7 +33,6 @@ const blogsDataOnHome = [...blogsData]
 
 
 
-// Function 2: Get employees blog
 const getEmployeesBlog = () => {
     const blogsDataLength = blogsDataOnHome.length;
 
