@@ -25,7 +25,14 @@ const getBlogData = async () => {
                 let thumb_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["thumb post-img"]});
                 let postType_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["post-type"]});
                 let postType_i = createElementItem("i", {_attribute: ["class", "aria-hidden"], _attributeContent: ["fa-solid fa-trowel-bricks", "true"]});
-                let postImg_a = createElementItem("a", {_attribute: ["href", "title", "data-fancybox"], _attributeContent: [`../civil-engineer-server/uploads/${blog?.title.replace(" ", "-") + "-" + 1 + "." + blog?.image[0]?.contentType.split("/")[1]}` || "", blog?.alt || "", ""]});
+                let postImg_a = createElementItem("a", {
+                    _attribute: ["href", "title", "data-fancybox"],
+                    _attributeContent: [
+                        `single_blog_slider.html?id=${blog?._id}`,  // URL with project ID
+                        blog?.alt || "",                            // Title attribute content
+                        ""                                          // Data-fancybox attribute content
+                    ]
+                });
                 // let postImg_img = createElementItem("img", {_attribute: ["src"], _attributeContent: ["data:image/" + blog?.image[0]?.contentType+";base64," + blog?.image[0]?.data.toString('base64') || ""]});
                 let postImg_img = createElementItem("img", {_attribute: ["src"], _attributeContent: [blog?.image[0]?.path || ""]});
                 let titleText_h3 = createElementItem("h3", {_attribute: ["class"], _attributeContent: ["text-bold text-uppercase mb_10"]});
