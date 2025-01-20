@@ -88,7 +88,7 @@ const getEmployeesData = () => {
 
 
 
-                // more_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
+                more_a[blogsDataLength - 1 - i].setAttribute("href", `single_blog_slider.html?id=${blog?._id}`);
                 
                 // let blogImages = blogsDataOnHome[i].image;
                 // // console.log(blogImages)
