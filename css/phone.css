@@ -99,7 +99,7 @@
     .col-md-4 {
         width: 100%; /* Make each column take full width */
         text-align: center; /* Center the text */
-        margin-bottom: 20px; /* Add margin between the columns */
+        /* margin-bottom: 20px; Add margin between the columns */
     }
 
     /* Adjust the title */
@@ -112,6 +112,10 @@
 
     .story_detail {
         margin: 0 !important;
+    }
+
+    .mb_51 {
+      margin-bottom: 0 !important;
     }
 
     /* Adjust paragraph text */
@@ -134,7 +138,7 @@
     .header1-text {
         font-size: 1.8rem; /* Reduce font size for better fit */
         text-align: center; /* Center the text */
-        padding: 10px; /* Add space below the text */
+        padding-top: 15px; /* Add space below the text */
     }
 }
 
@@ -155,6 +159,10 @@
         text-align: center;
     }
 
+    #service {
+      padding-bottom: 0px !important;
+    }
+
     .text-blk .cardHeading {
         font-size: 3rem !important;
     }
@@ -170,6 +178,11 @@
     .cardText {
         padding: 15px;
         font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .w-img {
+      width: 60px;
+      height: auto;
     }
 
     /* Adjust heading size and line height for smaller screens */

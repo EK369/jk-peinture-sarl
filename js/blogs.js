@@ -38,7 +38,17 @@ const getBlogData = async () => {
                 let date_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["date pull-left"]});
                 let more_div = createElementItem("div", {_attribute: ["class"], _attributeContent: ["more pull-right"]});
                 let date_i = createElementItem("i", {_attribute: ["class", "aria-hidden"], _attributeContent: ["fa fa-calendar", "true"]});
-                let more_a = createElementItem("a", {_attribute: ["href"], _attributeContent: [`single_blog_slider.html?id=${blog?._id}`]}, "LIRE LA SUITE ");
+                let more_a = createElementItem(
+                    "a",
+                    {
+                      _attribute: ["href", "style"],
+                      _attributeContent: [
+                        `single_blog_slider.html?id=${blog?._id}`,
+                        "font-size: 10px; color: black" // Adjust the font size as needed
+                      ]
+                    },
+                    "LIRE LA SUITE "
+                  );
                 let more_i = createElementItem("i", {_attribute: ["class", "aria-hidden"], _attributeContent: ["fa fa-arrow-circle-right", "true"]});
                 
                 _elementAppendChild(more_a, more_i);

@@ -169,6 +169,15 @@
         font-size: 3rem !important;
     }
 
+    .mb_51 {
+      margin-bottom: 0 !important;
+    }
+
+    .w-img {
+      width: 60px;
+      height: auto;
+    }
+
     /* Ensure the text block takes full width and aligns text in the center */
     .textSide {
         order: 3;
