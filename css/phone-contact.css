@@ -185,6 +185,10 @@
       visibility: visible !important;
     }
 
+    .fa-size {
+      font-size: 18px;
+    }
+
     .contact-button {
       justify-content: center;
     }

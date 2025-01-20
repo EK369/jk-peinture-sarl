@@ -185,6 +185,10 @@
       height: auto;
     }
 
+    .fa-size {
+      font-size: 18px !important;
+    }
+
     /* Adjust heading size and line height for smaller screens */
     .cardHeading {
         font-size: 1.8rem;

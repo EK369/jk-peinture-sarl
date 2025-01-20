@@ -178,6 +178,10 @@
       height: auto;
     }
 
+    .fa-size {
+      font-size: 18px;
+    }
+
     /* Ensure the text block takes full width and aligns text in the center */
     .textSide {
         order: 3;

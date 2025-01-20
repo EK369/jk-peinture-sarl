@@ -149,6 +149,10 @@
         display: none !important;
     }
 
+    .fa-size {
+      font-size: 18px;
+    }
+
 
     .text-show {
       visibility: visible !important;
